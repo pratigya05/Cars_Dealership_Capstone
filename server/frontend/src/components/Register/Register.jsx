@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import "./Register.css";
 import Header from "../Header/Header";
@@ -51,6 +50,7 @@ function Register() {
         <label>Username</label>
         <input
           type="text"
+          placeholder="Username"
           value={userName}
           onChange={(e) => setUserName(e.target.value)}
           required
@@ -59,6 +59,7 @@ function Register() {
         <label>First Name</label>
         <input
           type="text"
+          placeholder="First Name"
           value={firstName}
           onChange={(e) => setFirstName(e.target.value)}
           required
@@ -67,6 +68,7 @@ function Register() {
         <label>Last Name</label>
         <input
           type="text"
+          placeholder="Last Name"
           value={lastName}
           onChange={(e) => setLastName(e.target.value)}
           required
@@ -75,6 +77,7 @@ function Register() {
         <label>Email</label>
         <input
           type="email"
+          placeholder="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
@@ -83,6 +86,7 @@ function Register() {
         <label>Password</label>
         <input
           type="password"
+          placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           required
