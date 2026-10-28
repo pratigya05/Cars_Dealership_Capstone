@@ -1,123 +1,155 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us | Cars Dealership</title>
-  <link rel="stylesheet" href="/static/bootstrap.min.css">
-  <link rel="stylesheet" href="/static/style.css">
-  <style>
-    body {
-      background: #f5f7fa;
-      font-family: Arial, sans-serif;
-      color: #263238;
-    }
-    .navbar { background-color: darkturquoise; }
-    .navbar-brand { font-weight: bold; }
-    .about-header {
-      text-align: center;
-      padding: 35px 15px;
-      background: #e0f7fa;
-      border-radius: 8px;
-      margin-bottom: 25px;
-    }
-    .team-card {
-      height: 100%;
-      border: none;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 3px 12px rgba(0,0,0,.10);
-    }
-    .team-card img {
-      width: 100%;
-      height: 250px;
-      object-fit: cover;
-    }
-    .team-card .card-body { padding: 22px; }
-    .team-card h3 { font-size: 1.25rem; }
-    .role { color: #007f86; font-weight: bold; }
-    .email { overflow-wrap: anywhere; }
-    footer { text-align: center; padding: 22px; color: #555; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Us | Best Cars Dealership</title>
+
+    <!-- Local CSS files -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light">
-    <div class="container">
-      <a class="navbar-brand" href="/">Cars Dealerships</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarText" aria-controls="navbarText"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/about">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/contact">Contact Us</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">Best Cars Dealership</a>
 
-  <main class="container my-4">
-    <section class="about-header">
-      <h1>About Us</h1>
-      <p class="mb-0">
-        We help customers discover trusted dealerships and make informed
-        decisions about their next vehicle.
-      </p>
-    </section>
+        <button class="navbar-toggler" type="button"
+                data-toggle="collapse" data-target="#navbarMenu"
+                aria-controls="navbarMenu" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <section class="row g-4" aria-label="Our team">
-      <div class="col-md-4">
-        <article class="card team-card">
-          <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&amp;fit=crop&amp;w=700&amp;q=80"
-            alt="Professional business manager">
-          <div class="card-body">
-            <h3>Michael Anderson</h3>
-            <p class="role">Chief Executive Officer</p>
-            <p>Michael leads our dealership network and focuses on customer satisfaction. He works with our teams to improve service quality and build lasting customer relationships.</p>
-            <p class="email"><strong>Email:</strong> michael.anderson@example.com</p>
-          </div>
-        </article>
-      </div>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-link" href="/">Home</a>
+                <a class="nav-link active" href="About.html">About Us</a>
+                <a class="nav-link" href="Contact.html">Contact Us</a>
+            </div>
+        </div>
+    </nav>
 
-      <div class="col-md-4">
-        <article class="card team-card">
-          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&amp;fit=crop&amp;w=700&amp;q=80"
-            alt="Professional customer relations manager">
-          <div class="card-body">
-            <h3>Sarah Mitchell</h3>
-            <p class="role">Customer Relations Manager</p>
-            <p>Sarah helps customers find dealership information and share feedback. She works to ensure that reviews and customer concerns receive attention.</p>
-            <p class="email"><strong>Email:</strong> sarah.mitchell@example.com</p>
-          </div>
-        </article>
-      </div>
+    <main class="container my-5">
 
-      <div class="col-md-4">
-        <article class="card team-card">
-          <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&amp;fit=crop&amp;w=700&amp;q=80"
-            alt="Professional technology team member">
-          <div class="card-body">
-            <h3>David Wilson</h3>
-            <p class="role">Technology Manager</p>
-            <p>David oversees the digital dealership platform and its features. He focuses on making dealership details and customer reviews easy to access.</p>
-            <p class="email"><strong>Email:</strong> david.wilson@example.com</p>
-          </div>
-        </article>
-      </div>
-    </section>
-  </main>
+        <!-- About Us Description -->
+        <section class="text-center mb-5">
+            <h1>About Us</h1>
 
-  <footer>
-    <p class="mb-0">&copy; 2026 Cars Dealership. All rights reserved.</p>
-  </footer>
+            <p class="mt-3">
+                Best Cars Dealership is dedicated to helping customers find
+                the right vehicle for their needs and budget. We connect
+                customers with dealership locations across the United States
+                and provide information about available vehicles, dealership
+                services, and customer experiences. Our platform allows
+                visitors to explore dealerships, review dealer details, filter
+                locations by state, and share feedback through dealership
+                reviews. We value transparency, customer satisfaction, and
+                informed decisions. Our goal is to make the car-buying journey
+                simpler and more convenient by bringing dealership information
+                and customer reviews together in one accessible online
+                platform.
+            </p>
+        </section>
+
+        <!-- Team Members -->
+        <section>
+            <h2 class="text-center mb-4">Meet Our Team</h2>
+
+            <div class="row">
+
+                <!-- Project Coordinator -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img
+                            class="card-img-top"
+                            src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600"
+                            alt="Professional portrait representing the project coordinator">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Alex Morgan</h5>
+                            <h6 class="text-muted">Project Coordinator</h6>
+
+                            <p class="card-text">
+                                Coordinates project activities, organizes
+                                development tasks, and helps ensure that the
+                                application meets its requirements.
+                            </p>
+
+                            <a href="mailto:alex.morgan@example.com">
+                                alex.morgan@example.com
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frontend Developer -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img
+                            class="card-img-top"
+                            src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600"
+                            alt="Professional portrait representing the frontend developer">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Jamie Taylor</h5>
+                            <h6 class="text-muted">Frontend Developer</h6>
+
+                            <p class="card-text">
+                                Develops responsive user interfaces and works
+                                on the layout, styling, and usability of the
+                                dealership website.
+                            </p>
+
+                            <a href="mailto:jamie.taylor@example.com">
+                                jamie.taylor@example.com
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend Developer -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img
+                            class="card-img-top"
+                            src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=600"
+                            alt="Professional portrait representing the backend developer">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Jordan Lee</h5>
+                            <h6 class="text-muted">Backend Developer</h6>
+
+                            <p class="card-text">
+                                Works on backend functionality, authentication,
+                                data processing, and integration between the
+                                frontend and server.
+                            </p>
+
+                            <a href="mailto:jordan.lee@example.com">
+                                jordan.lee@example.com
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-3">
+        <p class="mb-0">
+            Best Cars Dealership | About Us
+        </p>
+    </footer>
+
+    <!-- Bootstrap JavaScript for responsive navigation -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
